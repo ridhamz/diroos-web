@@ -1,0 +1,827 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,600,700,800");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@import url(//db.onlinewebfonts.com/c/4bc98977ba557db3b2f5bb66bff54e25?family=Champagne+&+Limousines);
+
+@font-face {
+  font-family: "Champagne & Limousines";
+  src: url("//db.onlinewebfonts.com/t/4bc98977ba557db3b2f5bb66bff54e25.eot");
+  src: url("//db.onlinewebfonts.com/t/4bc98977ba557db3b2f5bb66bff54e25.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/4bc98977ba557db3b2f5bb66bff54e25.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/4bc98977ba557db3b2f5bb66bff54e25.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/4bc98977ba557db3b2f5bb66bff54e25.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/4bc98977ba557db3b2f5bb66bff54e25.svg#Champagne & Limousines")
+      format("svg");
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #fafafa;
+  font-family: "Champagne & Limousines";
+  overflow-x: hidden;
+}
+
+header {
+  display: block;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  background-size: auto 100vh;
+  background-position: center top;
+}
+
+header::before {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.bgAnim {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  text-align: right;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+#bgAnim1 {
+  background: url("/img/slider1.png");
+  background-size: auto 100vh;
+  background-position: center;
+}
+
+#bgAnim2 {
+  background: url("/img/slider2.png");
+  background-size: auto 100vh;
+  background-position: center;
+}
+
+#bgAnim1::before {
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+header .content {
+  display: inline-block;
+  font-family: "Champagne &amp; Limousines Thick Bold";
+
+  font-weight: bold;
+  text-align: left;
+  color: #fafafa;
+  position: absolute;
+  font-size: 25px;
+  margin-top: 25vh;
+  z-index: 2;
+  top: 20vh;
+  left: 0px;
+  padding: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+header .content2 {
+  display: inline-block;
+  font-family: "Champagne &amp; Limousines Thick Bold";
+
+  font-weight: bold;
+  text-align: left;
+  color: #fafafa;
+  position: absolute;
+  font-size: 25px;
+  z-index: 2;
+  top: 45vh;
+  left: 0px;
+  padding: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #fde100;
+  padding: 8px;
+  display: inline-block;
+  border: 1px solid #fde100;
+  border-radius: 50px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+header .content > span {
+  color: #fde100;
+  font-size: 25px;
+  padding: 0px;
+  margin: 0px;
+  letter-spacing: 2px;
+}
+
+.header_top {
+  display: inline-block;
+  width: 100%;
+  height: 10.5vh;
+  padding: 0px;
+  border: 0px solid #ededed;
+  border-width: 0px 0px 2px 0px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+}
+
+.header_top > div {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 10vh;
+  line-height: 10vh;
+  margin: 0px;
+  padding: 0px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #fafafa;
+  font-family: "Champagne &amp; Limousines Thick Bold";
+  z-index: 999;
+}
+
+.header_top > img {
+  display: inline-block;
+  height: 9vh;
+  position: fixed;
+  top: 0.5vh;
+  left: 2vw;
+  z-index: 1000;
+}
+
+.header_top > .list {
+  display: inline-block;
+  height: 10vh;
+  line-height: 10vh;
+  padding-left: 8px;
+  padding-right: 8px;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 1000;
+  font-size: 20px;
+  background: linear-gradient(#101f36, #213b5c);
+  color: #fafafa;
+  opacity: 1;
+}
+
+.nav {
+  display: none;
+  width: 60vw;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 1000;
+  text-align: left;
+}
+
+.nav > nav {
+  display: inline-block;
+  width: 50vw;
+  height: 100vh;
+  background-color: #213b5c;
+  color: #fafafa;
+}
+
+.nav > .close {
+  display: inline-block;
+  width: 10vw;
+  height: 10vh;
+  line-height: 10vh;
+  text-align: center;
+  float: left;
+  font-size: 20px;
+  background: linear-gradient(#101f36, #213b5c);
+  color: #fafafa;
+  opacity: 1;
+}
+
+.nav > nav > span {
+  display: inline-block;
+  width: 50vw;
+  color: #fafafa;
+  border: 1px solid #fafafa;
+  border-width: 0px 0px 1px 0px;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  padding-left: 2vw;
+  position: relative;
+}
+
+.nav > nav > span > a {
+  text-decoration: none;
+  color: #fafafa;
+}
+
+.nav > nav > span > .active {
+  text-decoration: none;
+  color: #fde100;
+}
+
+.snav > span {
+  display: inline-block;
+  width: 50vw;
+  color: #fafafa;
+  border: 1px solid #fafafa;
+  border-width: 0px 0px 1px 0px;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  padding-left: 10vw;
+}
+
+.snav > span > a {
+  text-decoration: none;
+  color: #fafafa;
+}
+
+.snav span > .active {
+  text-decoration: none;
+  color: #fde100;
+}
+
+.snav-icon {
+  position: absolute;
+  right: 2vw;
+  top: 0px;
+  padding-top: 1.5vh;
+  padding-bottom: 1vh;
+  padding-left: 10vw;
+  color: #fafafa;
+  font-size: 20px;
+}
+
+section {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: "Champagne &amp; Limousines Thick Bold";
+  color: #213b5c;
+  margin-top: 10vh;
+  margin-bottom: 4vh;
+  font-size: 5vw;
+}
+
+h1::before {
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+  width: 10vw;
+  border: 0px solid #21304b;
+  border-width: 0px 0px 2px 0px;
+}
+
+h1::after {
+  content: "";
+  display: inline-block;
+  width: 10vw;
+  margin-left: 10px;
+  border: 0px solid #21304b;
+  border-width: 0px 0px 2px 0px;
+}
+
+#produit {
+  background-color: #ededed;
+}
+
+.icon-svg {
+  width: 50px !important;
+  height: auto;
+}
+
+#produits .divcenter {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+.panel {
+  display: inline-block;
+  width: 40vw;
+  float: left;
+  margin-left: 5vw;
+  margin-top: 1vh;
+}
+
+.imgj {
+  width: 70vw;
+}
+
+#produits .imgm {
+  width: 55vw;
+  position: absolute;
+  top: 1vh;
+  transform: rotate(-25deg);
+}
+
+.icon_div {
+  display: inline-block;
+  font-size: 4vw;
+  background-color: #213b5c;
+  width: 12vw;
+  height: 12vw;
+  line-height: 12vw;
+  border: 0px solid #213b5c;
+  border-radius: 100%;
+  color: #fafafa;
+  padding: 0px;
+  text-align: center;
+}
+
+.content_panel {
+  display: inline-block;
+  width: 40vw;
+  text-align: center;
+  margin-bottom: 2vh;
+}
+
+.title_panel {
+  text-transform: uppercase;
+  font-family: "Champagne &amp; Limousines Thick Bold";
+  width: 100%;
+  margin-top: 2vh;
+  color: #213b5c;
+}
+
+.description_panel {
+  font-size: 12px;
+  line-height: 2vh;
+}
+
+#apropos > div {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding-top: 4vh;
+}
+
+#apropos .divcenter {
+  width: 100;
+  display: block;
+  margin: auto;
+}
+
+#partenaires h1 {
+  color: #fde100;
+  font-size: 2em;
+}
+
+#partenaires h1::before {
+  content: "";
+  display: inline-block;
+  margin-right: 30px;
+  width: 30px;
+  border: 0px solid white;
+  border-width: 0px 0px 3px 0px;
+}
+
+#partenaires h1::after {
+  content: "";
+  display: inline-block;
+  margin-left: 30px;
+  width: 30px;
+  border: 0px solid white;
+  border-width: 0px 0px 3px 0px;
+}
+
+#partenaires .divcenter div {
+  color: white;
+}
+
+#partenaires {
+  background-color: #213b5c;
+}
+
+#apropos {
+  background-color: #fdfdff;
+  padding-bottom: 4vh;
+}
+
+.divcenter {
+  margin-top: 4vh;
+}
+
+#apropos .panel {
+  display: inline-block;
+  border: 0px solid #d2d5dc;
+  border-width: 0px 2px 0px 0px;
+  width: 50%;
+  text-align: center;
+  margin: 0px;
+  box-sizing: border-box;
+  padding-right: 4vw;
+  padding-left: 4vw;
+}
+
+#apropos .img_personne {
+  display: inline-block;
+  width: 40vw;
+  height: auto;
+  border-radius: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+#apropos .img_personne img {
+  width: 100%;
+}
+
+#img_personne1 {
+  background: url("/img/chokri.png");
+  background-size: auto 20vw;
+  background-repeat: no-repeat;
+  background-position: right -2vw center;
+}
+
+#img_personne2 {
+  background: url("/img/adnen.png");
+  background-size: auto 20vw;
+  background-repeat: no-repeat;
+  background-position: right -2vw center;
+}
+
+#apropos .nom_personne {
+  display: inline-block;
+  color: #213b5c;
+  font-family: "Champagne &amp; Limousines Thick Bold";
+  width: 100%;
+  font-size: 15px;
+  margin-top: 2vh;
+}
+
+#apropos .poste {
+  display: inline-block;
+  color: #213b5c;
+  font-family: "Champagne & Limousines";
+  width: 100%;
+  font-size: 15px;
+}
+
+#apropos .social {
+  margin-top: 2vh;
+}
+
+.cercle {
+  background-color: #c0c0c0;
+  color: #fafafa;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  border: 0px solid #213b5c;
+  border-radius: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.cercle:hover {
+  background-color: #213b5c;
+  color: #fafafa;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  border: 0px solid #213b5c;
+  border-radius: 100%;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 10px;
+}
+.map-text {
+  text-align: left;
+}
+input,
+select {
+  width: 100%;
+  margin: 0px;
+  margin-bottom: 2px;
+  font-family: "Champagne & Limousines";
+  background-color: #213b5c;
+  border: 0px solid #213b5c;
+  font-size: 3vw;
+  height: 30px;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  border-radius: 5px;
+  color: #ffffff;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #213b5c;
+}
+
+select {
+  background-color: #213b5c;
+  background-image: url("/img/arrow.png");
+  background-size: 2vh 2vh;
+  background-repeat: no-repeat;
+  background-position: right 2vw center;
+}
+
+input::placeholder {
+  color: #fafafa;
+}
+
+textarea::placeholder {
+  color: #fafafa;
+}
+
+#nom_f,
+#prenom_f {
+  width: 48%;
+}
+
+#nom_f {
+  float: left;
+}
+
+#prenom_f {
+  float: right;
+}
+
+textarea {
+  width: 100%;
+  font-family: "Champagne & Limousines";
+  border-radius: 10px;
+  background-color: #213b5c;
+  border: 0px solid #fde100;
+  font-size: 3vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  color: #fafafa;
+  height: 80px;
+}
+
+.btn_j {
+  display: inline-block;
+  font-family: "Champagne &amp; Limousines Thick Bold";
+  color: #213b5c;
+  border: 0px solid #213b5c;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #fde100;
+
+  font-size: 4vw;
+  padding: 8px;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: inline-block;
+  border: 1px solid #fde100;
+  border-radius: 50px;
+  margin-top: 1vh;
+}
+
+footer {
+  display: inline-block;
+  width: 100%;
+  margin: 0px;
+  background-image: url("/img/footer.png");
+  background-position: bottom;
+  background-size: cover;
+  background-color: #f5f4f9;
+
+  font-size: 4vw;
+  text-align: right;
+  position: relative;
+  padding-top: 4vh;
+  margin-bottom: 0px;
+}
+
+footer > div {
+  display: inline-block;
+  font-family: "Champagne & Limousines";
+  text-align: left;
+  margin-top: 1vh;
+}
+
+.block_copyr {
+  display: inliline-height;
+  position: absolute;
+  right: 0vw;
+  bottom: 0vh;
+  line-height: 2vh;
+  border-radius: 100% 0px 0px 0px;
+  padding-top: 9vh;
+  padding-bottom: 4vh;
+  padding-left: 20vw;
+  padding-right: 4vw;
+}
+
+.copyr {
+  font-family: "Champagne &amp; Limousines Thick Bold";
+  font-size: 4vw;
+}
+
+footer .panel {
+  display: inline-block;
+  color: #213b5c;
+  line-height: 1vh;
+  width: 100%;
+  text-align: center;
+  margin: 0px;
+  margin-bottom: 4vh;
+}
+
+footer .panel > .title {
+  display: inline-block;
+  font-family: "Champagne &amp; Limousines Thick Bold";
+  margin-bottom: 3vh;
+}
+
+footer .item {
+  cursor: pointer;
+  margin-right: 4vw;
+}
+
+.panel_block {
+  display: inline-block;
+}
+
+.descover {
+  display: none;
+  background-color: #1d4799;
+  padding: 8px;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  font-size: 1vw;
+  border: 2px solid #1d4799;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.descover2 {
+  padding: 8px;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  font-size: 1vw;
+  border: 2px solid #fde100;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #fde100;
+  background-color: transparent !important;
+}
+
+.descover .fas {
+  margin-left: 1vw;
+  font-size: 0.8vw;
+}
+
+.descover {
+  padding: 8px;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  font-size: 4vw;
+  border: 2px solid #fafafa;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #fafafa;
+  background-color: transparent !important;
+  margin-left: 15vw;
+}
+
+.descover2 {
+  padding: 8px;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  font-size: 4vw;
+  border: 2px solid #fde100;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #fde100;
+  background-color: transparent !important;
+  margin-left: 15vw;
+}
+
+.descover .fas {
+  margin-left: 2vw;
+  font-size: 3.5vw;
+}
+
+header .title {
+  display: none;
+  width: 80vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
+
+header .description {
+  display: none;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  font-size: 3vw;
+  font-family: "Champagne & Limousines";
+
+  color: #ffffff;
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
+
+header .descover {
+  display: none;
+}
+
+header > .content > div {
+  display: none;
+}
+
+header .title {
+  display: inline-block;
+  text-align: left;
+  line-height: 4.5vh;
+}
+
+header .description {
+  display: inline-block;
+  text-align: left;
+}
+
+.content div {
+  text-align: left;
+}
+
+#headerContent1 {
+  display: block;
+}
+
+#headerContent1 .title {
+  display: inline-block;
+  text-align: left;
+}
+
+#headerContent1 .description {
+  display: inline-block;
+  text-align: left;
+}
+
+#headerContent1 .descover {
+  display: inline-block;
+}
+
+#bgAnim1 {
+  display: block;
+}
+
+.hello_icon {
+  display: inline-block;
+  font-size: 15.2vw;
+  z-index: 2;
+  color: #213b5c;
+  border: 4px solid #213b5c;
+  width: 21vw;
+  height: 21vw;
+  line-height: 20vw;
+  border-radius: 100%;
+  background-color: #fafafa;
+  margin-bottom: 3vh;
+  margin-top: 3vh;
+}

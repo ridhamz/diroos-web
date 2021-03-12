@@ -1,0 +1,1546 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,600,700,800");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@import url(https://db.onlinewebfonts.com/c/4bc98977ba557db3b2f5bb66bff54e25?family=Champagne+&+Limousines);
+
+@font-face {
+  font-family: "Champagne & Limousines";
+  src: url("https://db.onlinewebfonts.com/t/4bc98977ba557db3b2f5bb66bff54e25.eot");
+  src: url("https://db.onlinewebfonts.com/t/4bc98977ba557db3b2f5bb66bff54e25.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/4bc98977ba557db3b2f5bb66bff54e25.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/4bc98977ba557db3b2f5bb66bff54e25.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/4bc98977ba557db3b2f5bb66bff54e25.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/4bc98977ba557db3b2f5bb66bff54e25.svg#Champagne & Limousines")
+      format("svg");
+}
+
+.navItem {
+  border: none;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #f5f4f8;
+  overflow-x: hidden;
+}
+
+.bgAnim {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  text-align: right;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+#bgAnim1 {
+  background: url("../img/b.jpeg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#bgAnim2 {
+  background: url("../img/b.jpeg");
+  background-size: 100% 100vh;
+}
+
+/* #bgAnim1::before {
+	content: "";
+	opacity: .6;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+} */
+
+header {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  background: transparent;
+}
+
+/* 
+header::before {
+	content: "";
+	background-color: #000;
+	opacity: .6;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+} */
+
+header > div {
+  display: inline-block;
+  position: absolute;
+  z-index: 2;
+  top: 8vh;
+  left: 0px;
+  text-align: center;
+  width: 100%;
+  margin: 0px;
+  color: #ffffff;
+}
+
+nav {
+  display: inline-block;
+}
+
+nav span {
+  display: inline-block;
+  font-family: "Champagne & Limousines";
+  cursor: pointer;
+  font-size: 1vw;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 20px;
+  position: relative;
+}
+
+nav span:hover {
+  display: inline-block;
+  font-family: "Champagne & Limousines";
+  cursor: pointer;
+  font-size: 1vw;
+  text-decoration: none;
+  color: #fff;
+  padding: 20px;
+  position: relative;
+}
+
+nav span > a {
+  -webkit-transition: all 1s ease;
+  opacity: 1;
+  transition: all 1s ease;
+  opacity: 1;
+}
+
+nav span:hover > a {
+  opacity: 0;
+  -webkit-transform: rotateX(30deg) translateY(-15px);
+  transform: rotateX(30deg) translateY(-15px);
+}
+
+nav span:hover > .item_anim {
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  opacity: 1;
+  -webkit-transform: translateY(-1.5vh);
+  transform: translateY(-1.5vh);
+}
+
+nav span > .item_anim {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0px;
+  top: 0px;
+  padding-top: 3.5vh;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  color: #fff;
+  opacity: 0;
+}
+
+.snavTop > span > .item_anim {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  text-align: left;
+  padding-left: 20px;
+  left: 0px;
+  top: 20px;
+  padding-top: 0px;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  color: #fff;
+  opacity: 0;
+}
+
+.snavTop {
+  width: 200px;
+}
+
+.snavTop > span:hover > .item_anim {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  text-align: left;
+  padding-left: 20px;
+  left: 0px;
+  top: 20px;
+  padding-top: 0px;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  color: #3c2ef1;
+  opacity: 1;
+  webkit-transform: translateY(-20px);
+  transform: translateY(-20px);
+}
+
+nav > span > nav {
+  display: none;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 7.5vh;
+  left: -10%;
+  z-index: 2000;
+  border: none;
+}
+
+nav > span > nav > span {
+  display: inline-block;
+  margin: 0px;
+  width: 100%;
+  border: 0px solid rgba(255, 255, 255, 0.5);
+  border-width: 0px 0px 1px 0px;
+
+  padding-top: 4px;
+  padding-bottom: 4px;
+  color: #21304b;
+  text-align: left;
+}
+
+nav > span > nav > span:hover {
+  display: inline-block;
+  margin: 0px;
+  width: 100%;
+  /* border: 0px solid rgba(255, 255, 255, 0.5); */
+  border-width: 0px 0px 1px 0px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.itemb {
+  border-width: 0px;
+}
+
+.itemb:hover {
+  border-width: 0px;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+nav a:hover {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav span:hover > a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav .active {
+  color: #fff;
+}
+
+header .content {
+  display: inline-block;
+  margin-top: 0px;
+  width: 60vw;
+  height: 200px;
+  z-index: 2;
+  position: absolute;
+  top: 20vh;
+  left: 19vw;
+  text-align: left;
+}
+
+header .content > div {
+  display: inline-block;
+  font-family: "Champagne &amp; Limousines Thick Bold";
+
+  font-weight: bold;
+  text-align: left;
+  color: #fafafa;
+
+  font-size: 4.2vw;
+
+  padding: 0px;
+}
+
+header .content > div > span {
+  color: #fde100;
+  font-size: 4.2vw;
+  padding: 0px;
+  margin: 0px;
+  letter-spacing: 2px;
+}
+
+header .title {
+  display: none;
+  width: 100%;
+  overflow: visible;
+  height: 18vh;
+  font-size: 0.9em;
+  line-height: 8vh;
+}
+
+header .description {
+  display: none;
+  margin-top: 2vh;
+  font-size: 1.2vw;
+  font-family: "Champagne & Limousines";
+  width: 50%;
+  height: 50%;
+  margin-right: 30vw;
+  /* height: 10vh; */
+  color: #ffffff;
+}
+
+.demo {
+  text-transform: uppercase;
+  font-size: 1vw;
+  color: #fff;
+  padding: 8px;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  display: inline-block;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  margin-left: 4vw;
+  transition: all 1s ease;
+  font-family: "Champagne &amp; Limousines Thick Bold";
+}
+
+.demo:hover {
+  text-transform: uppercase;
+  font-size: 1vw;
+  padding: 8px;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  display: inline-block;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  margin-left: 4vw;
+  font-family: "Champagne &amp; Limousines Thick Bold";
+}
+
+.demo a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.demo:hover > a {
+  text-decoration: none;
+  color: #fff;
+  transform: none;
+  opacity: 1;
+}
+
+section {
+  padding: 0px;
+  margin: 0px;
+  display: inline-block;
+  width: 100%;
+
+  text-align: center;
+}
+
+section > div {
+  display: inline-block;
+  font-family: "Champagne & Limousines";
+  /*margin-top: 4vh;*/
+}
+
+#produits > div {
+  display: inline-block;
+  font-family: "Champagne & Limousines";
+  margin-top: 4vh;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: "Champagne &amp; Limousines Thick Bold";
+  color: #21304b;
+  margin-top: 6vh;
+  font-size: 2em;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-family: "Champagne & Limousines";
+  color: #213b5c;
+  margin-top: 6vh;
+  font-size: 2vw;
+}
+
+.partenaire-img {
+  width: 100px;
+  height: auto;
+  border-radius: 100%;
+  background: white;
+}
+
+h1::before {
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+  width: 2.5vw;
+  border: 0px solid #21304b;
+  border-width: 0px 0px 2px 0px;
+}
+
+h1::after {
+  content: "";
+  display: inline-block;
+  width: 2.5vw;
+  margin-left: 10px;
+  border: 0px solid #21304b;
+  border-width: 0px 0px 2px 0px;
+}
+
+#produits .divcenter {
+  position: relative;
+  display: inline-block;
+  width: 25vw;
+  position: relative;
+}
+
+#produits .imgj {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 25vw;
+  height: 65vh;
+}
+
+#produits .imgm {
+  position: absolute;
+  top: 4vh;
+  left: 0px;
+  width: 20vw;
+  transform: rotate(-25deg);
+}
+
+#produits .panel {
+  display: flex;
+  width: 20vw;
+  flex-direction: column;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  align-items: center;
+  text-align: center;
+}
+
+.panel-right {
+  opacity: 0;
+  right: -53vw;
+}
+
+.panel-left {
+  opacity: 0;
+  left: -53vw;
+}
+
+.description_panel {
+  width: 7vw;
+}
+
+#produits .icon_div {
+  display: inline-block;
+  font-size: 2vw;
+  background-color: #213b5c;
+  width: 4vw;
+  height: 4vw;
+  line-height: 4vw;
+  border: 0px solid #213b5c;
+  border-radius: 100%;
+  color: #fafafa;
+}
+
+#produits .icon_img {
+  width: 60px;
+  height: 60px;
+}
+
+.title_panel {
+  text-transform: uppercase;
+  font-family: "Champagne &amp; Limousines Thick Bold";
+  width: 100%;
+  margin-top: 2vh;
+  color: #213b5c;
+}
+
+#partenaires h1 {
+  color: #fde100;
+  font-size: 2em;
+}
+
+#partenaires h1::before {
+  content: "";
+  display: inline-block;
+  margin-right: 30px;
+  width: 30px;
+  border: 0px solid white;
+  border-width: 0px 0px 3px 0px;
+}
+
+#partenaires h1::after {
+  content: "";
+  display: inline-block;
+  margin-left: 30px;
+  width: 30px;
+  border: 0px solid white;
+  border-width: 0px 0px 3px 0px;
+}
+
+#partenaires .divcenter div {
+  color: white;
+}
+
+#produits #panel2 {
+  top: 25vh;
+}
+
+#produits #panel3 {
+  top: 50vh;
+}
+
+#produits #panel5 {
+  top: 25vh;
+}
+
+#produits #panel6 {
+  top: 50vh;
+}
+
+footer {
+  width: 100%;
+  margin: 0px;
+  height: 500px;
+  background: url("/img/footer.png");
+  background-size: 100% 352px;
+  font-size: 1vw;
+  text-align: right;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-attachment: scroll;
+}
+
+footer > div {
+  display: inline-block;
+  font-family: "Champagne & Limousines";
+  text-align: left;
+  margin-right: 15vw;
+  margin-top: 10vh;
+}
+
+.copyr {
+  font-family: "Champagne &amp; Limousines Thick Bold";
+}
+
+footer .panel {
+  display: inline-block;
+  margin-right: 6vw;
+  color: #213b5c;
+  float: right;
+  line-height: 3.5vh;
+}
+
+footer .panel > .title {
+  display: inline-block;
+  font-family: "Champagne &amp; Limousines Thick Bold";
+  margin-bottom: 4vh;
+  border-radius: 5px;
+  transition: 0.8s;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+footer .item {
+  cursor: pointer;
+}
+
+footer .item:hover {
+  color: #fde100;
+  cursor: pointer;
+  background-color: #213b5c;
+}
+
+#produit_footer:hover {
+  color: #fde100;
+  cursor: pointer;
+  background-color: #213b5c;
+}
+
+#home_footer:hover {
+  color: #fde100;
+  cursor: pointer;
+  background-color: #213b5c;
+}
+
+.cercle {
+  background-color: #c0c0c0;
+  color: #fafafa;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  transition: 0.8s;
+  line-height: 40px;
+  border: 0px solid #213b5c;
+  border-radius: 100%;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+footer .item {
+  transition: 0.8s;
+}
+
+.cercle:hover {
+  background-color: #213b5c;
+  color: #fafafa;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border: 0px solid #213b5c;
+  border-radius: 100%;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#apropos {
+  background-color: #fdfdff;
+}
+
+#apropos .divcenter {
+  margin-bottom: 10vh;
+}
+
+.founder-img {
+  width: 100%;
+}
+
+#apropos .panel {
+  display: inline-block;
+  border: 0px solid #d2d5dc;
+  border-width: 0px 2px 0px 0px;
+  width: 20vw;
+}
+
+#apropos .stat {
+  width: 30%;
+}
+
+#apropos .chiffres {
+  padding: 15vh 20vw 0;
+  width: 100vw;
+  display: flex;
+  height: 60vh;
+  justify-content: space-around;
+  background-position-y: -20vh;
+  background-image: url("../img/chiffre.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.year > p {
+  margin-bottom: -1.7vh;
+  font-size: 2em;
+  font-weight: bold;
+  font-family: "Champagne & Limousines";
+  color: #feea00;
+}
+
+.year > img {
+  width: 80px;
+}
+
+#apropos .stat {
+  display: flex;
+  flex-direction: column;
+}
+
+#apropos .location {
+  margin-top: 25px;
+  color: white;
+  font-size: 1.7em;
+  font-weight: bolder;
+}
+
+#apropos .description {
+  margin-top: 1px;
+  color: #feea00;
+  font-size: 1.4em;
+  font-weight: bolder;
+}
+
+#apropos .chiffre {
+  color: white;
+  font-family: "Champagne &amp; Limousines Thick Bold";
+  font-size: 4em;
+  font-weight: bolder;
+}
+
+#apropos .img_personne {
+  display: inline-block;
+  width: 10vw;
+  height: 10vw;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#apropos .img_personne:hover {
+  width: 55%;
+}
+
+#apropos .cercle {
+  transition: 0.5s;
+}
+
+#nizar {
+  background: url("/img/nizar.png");
+  background-size: auto 10vw;
+  background-repeat: no-repeat;
+  background-position: right -1vw center;
+}
+
+#adnen {
+  background: url("/img/adnen.png");
+  background-size: auto 10vw;
+  background-repeat: no-repeat;
+  background-position: right -1vw center;
+}
+
+#apropos .nom_personne {
+  display: inline-block;
+  color: #213b5c;
+  font-family: "Champagne &amp; Limousines Thick Bold";
+  width: 100%;
+  font-size: 1.5vw;
+  margin-top: 2vh;
+}
+
+#apropos .poste {
+  display: inline-block;
+  color: #213b5c;
+  font-family: "Champagne & Limousines";
+  width: 100%;
+  font-size: 1.3vw;
+}
+#mapid {
+  height: 60%;
+  width: 100%;
+}
+.map {
+  /* height:100%; */
+  margin-right: 20px;
+  width: 40%;
+  /* display:inline-block; */
+  border-radius: 6px;
+  background: #213b5c;
+}
+.form {
+  /* display:inline-block; */
+  height: 100%;
+  /* position: absolute; */
+  width: 56%;
+}
+
+.map-description {
+  float: left;
+  margin-left: 35px;
+  margin-top: 35px;
+  text-align: left;
+}
+
+.map-text {
+  display: flex;
+  color: white;
+  font-size: 1.2em;
+  font-family: "Champagne & Limousines";
+}
+
+.map-description i {
+  font-size: 1.2em;
+  margin-right: 20px;
+  color: #feea00;
+}
+
+#apropos .social {
+  margin-top: 2vh;
+}
+
+input,
+select {
+  width: 100%;
+  margin: 0px;
+  margin-bottom: 5px;
+  font-family: "Champagne & Limousines";
+  border: 1px solid #213b5c;
+  font-size: 1.2vw;
+  height: 50px;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  border-radius: 6px;
+  color: #213b5c;
+  background-color: #ffffff;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+option {
+  color: #213b5c;
+}
+
+select {
+  background-color: #ffffff;
+  background-image: url("/img/arrow.png");
+  background-size: 2vh 2vh;
+  background-repeat: no-repeat;
+  background-position: right 1vw center;
+}
+
+input::placeholder {
+  color: #213b5c;
+}
+
+textarea::placeholder {
+  color: #ffffff;
+}
+
+#nom_f,
+#prenom_f {
+  width: 48%;
+}
+
+#nom_f {
+  float: left;
+}
+
+#prenom_f {
+  float: right;
+}
+
+textarea {
+  width: 100%;
+  font-family: "Champagne & Limousines";
+  border-radius: 10px;
+  background-color: #778391;
+  border: 1px solid #778391;
+  font-size: 1.2vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  color: #ffffff;
+}
+
+.btn_j {
+  display: inline-block;
+  font-family: "Champagne &amp; Limousines Thick Bold";
+  color: white;
+  border: 0px solid #213b5c;
+  cursor: pointer;
+  background-color: #213b5c;
+  text-align: left;
+  font-size: 1vw;
+  padding: 8px;
+  padding-left: 24px;
+  letter-spacing: 1px;
+  padding-right: 24px;
+  display: block;
+  border: 1px solid #1f4373;
+  border-radius: 6px;
+}
+
+.btn_j:hover {
+  cursor: pointer;
+}
+
+.srall-top {
+  display: none;
+  background-color: #fde100;
+  border: 0px solid #fde100;
+  border-radius: 100%;
+  color: #1f4373;
+  position: fixed;
+  bottom: 4vh;
+  right: 2vw;
+  z-index: 10;
+  width: 6vh;
+  height: 6vh;
+  line-height: 6vh;
+  padding: 0px;
+  font-size: 3vh;
+  text-align: center;
+  cursor: pointer;
+}
+
+iframe {
+  -webkit-box-shadow: 0px 0px 13px 0px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: 0px 0px 13px 0px rgba(255, 255, 255, 0.75);
+  box-shadow: 0px 0px 13px 0px rgba(255, 255, 255, 0.75);
+  width: 38vw;
+  height: 40vh;
+  border: 0px solid #fff;
+  padding: 0px;
+  margin-top: 4vh;
+  border-radius: 30px;
+}
+
+#dashboard img {
+  width: 30vw;
+}
+
+#dashboard h1 {
+  margin-bottom: 50px;
+}
+
+#dashboard .icon_div {
+  display: inline-block;
+  font-size: 2vw;
+  background-color: #213b5c;
+  /* width: 4vw;
+	height: 4vw; */
+  line-height: 4vw;
+  border: 0px solid #213b5c;
+  border-radius: 100%;
+  color: #fafafa;
+}
+
+#dashboard .panel {
+  display: inline-flex;
+  width: 90%;
+  padding: 10px;
+  border-radius: 5px;
+  justify-content: baseline;
+  background: white;
+}
+
+#dashboard .divcenter {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 60vw;
+}
+
+#dashboard .description_panel {
+  font-size: 1.2;
+  justify-self: center;
+}
+
+#dashboard .title_panel {
+  text-align: left;
+  margin-top: 0;
+  justify-self: center;
+  align-self: center;
+}
+
+#dashboard .description_panel {
+  text-align: left;
+  width: 100%;
+}
+
+#dashboard .panel {
+  margin-bottom: 1vh;
+  transition: box-shadow 0.5s;
+  width: 100%;
+}
+
+#dashboard .panel:hover {
+  -webkit-box-shadow: 0px 0px 25px -8px rgba(0, 0, 0, 0.27);
+  -moz-box-shadow: 0px 0px 25px -8px rgba(0, 0, 0, 0.27);
+  box-shadow: 0px 0px 25px -8px rgba(0, 0, 0, 0.27);
+}
+
+#dashboard .panel > div {
+  margin-left: 1.5vw;
+}
+
+#dashboard .layout_panel > div {
+  display: inline-flex;
+  width: 30vw;
+  flex-direction: column;
+}
+
+.dashboard-img {
+  opacity: 1 !important;
+}
+
+#dashboard .layout_panel > img {
+  position: aboslute;
+  top: 0;
+  right: 10vw;
+}
+
+#dashboard .layout_panel {
+  display: flex;
+  top: 0;
+  right: 10vw;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  justify-content: space-between;
+  /* margin-right:-150vw;
+    width:200vw; */
+}
+
+.dashboard-left {
+  margin-left: -100vw;
+}
+
+.dashboard-right {
+  margin-right: -100vw;
+}
+
+#dashboard-left2 {
+  /* width:40vw; */
+}
+/* 
+#dashboard .layout_panel:nth-child(3) {
+    flex-direction: row-reverse;
+    left: 10vw;
+    justify-content: space-between;
+} */
+
+#dashboard .dashboard-img img {
+  max-width: 400px;
+  width: 19vw;
+  position: absolute;
+  -webkit-box-shadow: 0px 0px 32px -2px rgba(0, 0, 0, 0.27);
+  -moz-box-shadow: 0px 0px 32px -2px rgba(0, 0, 0, 0.27);
+  box-shadow: 0px 0px 32px -2px rgba(0, 0, 0, 0.27);
+}
+
+#dashboard .dashboard-img img:nth-child(2) {
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+#dashboard .dashboard-img img:nth-child(1) {
+  margin-left: 0px;
+  margin-top: -20px;
+}
+
+.closeBTN {
+  position: absolute;
+  top: 1vh;
+  right: 23.5vw;
+  font-size: 2vw;
+  z-index: 999999;
+  color: red;
+  cursor: pointer;
+}
+
+#contact {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0px;
+  height: 100vh;
+  left: 0px;
+  z-index: 999999;
+}
+
+#contact .divcenter {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact .divcenter > div {
+  display: flex;
+  align-items: stretch;
+  justify-items: stretch;
+}
+/* #contact .divcenter div:nth-child(2){
+    width:60%;
+}
+#contact .divcenter div:nth-child(1){
+    width:40%;
+} */
+
+.descover {
+  display: none;
+  padding: 8px;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  font-size: 1vw;
+  border: 2px solid #fafafa;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #fafafa;
+  background-color: transparent !important;
+  font-family: "Champagne &amp; Limousines Thick Bold";
+  font-style: normal;
+}
+
+.descover2 {
+  padding: 8px;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  font-size: 1vw;
+  border: 2px solid #fde100;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #fde100;
+  background-color: transparent !important;
+  font-family: "Champagne &amp; Limousines Thick Bold";
+  font-style: normal;
+}
+
+.descover .fas {
+  margin-left: 1vw;
+  font-size: 0.8vw;
+}
+
+#headerContent1 .title {
+  display: inline-block;
+}
+
+#headerContent1 .description {
+  display: inline-block;
+}
+
+#headerContent1 .descover {
+  display: inline-block;
+}
+
+#headerContent2 .title {
+  display: inline-block;
+}
+
+#headerContent2 .description {
+  display: inline-block;
+}
+
+#headerContent2 .descover {
+  display: inline-block;
+}
+
+@-ms-viewport {
+  width: device-width;
+  height: device-height;
+}
+
+.total_bar {
+  display: inline-block;
+  position: absolute;
+  top: -4vh;
+  right: 2vw;
+  height: 50vh;
+  width: 14vw;
+  z-index: 1;
+}
+
+.bar_j {
+  display: inline-block;
+  border-bottom: 50vh solid #fde100;
+  border-image-slice: 1;
+  border-left: 7vw solid transparent;
+  margin-right: 0px;
+  float: left;
+}
+
+.bar_j2 {
+  display: inline-block;
+  border-top: 50vh solid #fde100;
+  border-image-slice: 1;
+  border-right: 7vw solid transparent;
+  margin: 0px;
+  float: right;
+}
+
+.total_bar2 {
+  right: -7vw;
+}
+
+.total_bar2 .bar_j2 {
+  background-color: #fde100;
+}
+
+.hello_icon {
+  display: inline-block;
+  position: absolute;
+  top: 2.5vw;
+  right: 4.05vw;
+  font-size: 4vw;
+  z-index: 2;
+  color: #213b5c;
+  border: 2px solid #213b5c;
+  width: 6vw;
+  height: 6vw;
+  line-height: 6vw;
+  border-radius: 100%;
+  background-color: #fafafa;
+}
+
+.hello_icon2 {
+  display: inline-block;
+  position: absolute;
+  top: 2vw;
+  right: 3.55vw;
+  font-size: 4vw;
+  z-index: 2;
+  color: #213b5c;
+  border: 0px solid #213b5c;
+  width: 7vw;
+  height: 7vw;
+  line-height: 6vw;
+  border-radius: 100%;
+  background-color: #fafafa;
+}
+
+.nav-bar {
+  margin-top: -6vh;
+}
+
+#slideshow {
+  top: 10vh;
+  display: flex;
+  position: absolute;
+  right: 18vw;
+  flex-direction: column;
+  width: 259px;
+  justify-content: center;
+  mix-blend-mode: hard-light;
+}
+
+#slideshow img {
+  justify-self: center;
+  opacity: 0;
+  position: absolute;
+  right: 25%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.animate {
+  animation-name: slideshow;
+  /* animation-iteration-count: infinite; */
+  animation-duration: 5s;
+  animation-delay: -1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.title_panel {
+  margin-right: auto;
+  white-space: nowrap;
+  width: 20vw;
+}
+
+@keyframes slideshow {
+  0% {
+    top: 00vh;
+    opacity: 0;
+    width: 150px;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 1;
+    top: 32vh;
+    width: 260px;
+  }
+
+  60% {
+    opacity: 1;
+    top: 48vh;
+    width: 260px;
+  }
+
+  100% {
+    opacity: 0;
+    top: 80vh;
+    width: 150px;
+  }
+}
+
+.description ul {
+  display: none;
+}
+
+/* #slideshow:after {
+	content  : "";
+	position : absolute;
+	z-index  : 1;
+	bottom   : 0;
+	left     : 0;
+	pointer-events   : none;
+	background-image : linear-gradient(to bottom, 
+					rgba(255,255,255, 0), 
+					rgba(255,255,255, 1) 50%);
+	width    : 100%;
+	height   : 4em;
+} */
+.svg-icon {
+  width: 4vw !important;
+  padding: 0;
+  border: none;
+}
+
+#loading {
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-position: bottom;
+  align-content: space-around;
+}
+
+#loading img {
+  display: block;
+  margin: auto;
+  width: 200px;
+}
+
+.animate-background {
+  -webkit-animation: spin 2s linear infinite;
+  -moz-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0);
+  }
+
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.video-container {
+  border: white 12px solid;
+  padding: 0;
+  margin: 0;
+  width: 35vw;
+  position: relative;
+  height: auto;
+  margin: auto;
+  margin-top: 50px;
+  -webkit-box-shadow: 0px 0px 55px -10px rgba(112, 112, 112, 1);
+  -moz-box-shadow: 0px 0px 55px -10px rgba(112, 112, 112, 1);
+  box-shadow: 0px 0px 55px -10px rgba(112, 112, 112, 1);
+}
+
+.video-container video {
+  width: 100%;
+  margin-bottom: -7px;
+  height: 100%;
+}
+
+#play {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 20%;
+  top: 0;
+  bottom: 0;
+  background: #fde801;
+  border-radius: 50%;
+  margin: auto;
+  z-index: 2;
+  cursor: pointer;
+  margin-bottom: auto;
+}
+
+.play-button-effect {
+  border-radius: 50%;
+  width: 100%;
+  cursor: default;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  height: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-animation: playButtonAnimation 2s infinite linear;
+  -moz-animation: playButtonAnimation 2s infinite linear;
+  -ms-animation: playButtonAnimation 2s infinite linear;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.play-button-effect:nth-child(1) {
+  animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  border: white 2px dashed;
+}
+
+.play-button-effect:nth-child(2) {
+  animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  border: #fde801 2px solid;
+}
+
+.play-button-effect:nth-child(3) {
+  animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  border: white 2px double;
+}
+
+.play-button-effect:nth-child(4) {
+  animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
+  border: #fde801 2px dotted;
+}
+
+#play div:nth-child(5) {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 50%;
+  margin-top: 25%;
+  margin-left: 1px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+@-webkit-keyframes playButtonAnimation {
+  0% {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  50% {
+    width: 201%;
+    height: 201%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    width: 200%;
+    height: 200%;
+  }
+}
+
+@-moz-keyframes playButtonAnimation {
+  0% {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  50% {
+    width: 201%;
+    height: 201%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    width: 300%;
+    height: 300%;
+  }
+}
+
+@-o-keyframes playButtonAnimation {
+  0% {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  50% {
+    width: 201%;
+    height: 201%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    width: 300%;
+    height: 300%;
+  }
+}
+
+@keyframes playButtonAnimatione {
+  0% {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  50% {
+    width: 201%;
+    height: 201%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    width: 300%;
+    height: 300%;
+  }
+}
