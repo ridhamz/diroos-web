@@ -55,7 +55,8 @@ body {
 
 #bgAnim2 {
   background: url("../img/b.jpeg");
-  background-size: 100% 100vh;
+  background-size: 100% 100%;
+  /* background-size: 100% 100vh;*/
 }
 
 /* #bgAnim1::before {
@@ -307,14 +308,14 @@ header .title {
   width: 100%;
   overflow: visible;
   height: 18vh;
-  font-size: 0.9em;
+  font-size: 40px;
   line-height: 8vh;
 }
 
 header .description {
   display: none;
-  margin-top: 2vh;
-  font-size: 1.2vw;
+  margin-top: 0vh;
+  font-size: 15px;
   font-family: "Champagne & Limousines";
   width: 50%;
   height: 50%;
