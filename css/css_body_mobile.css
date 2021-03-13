@@ -68,13 +68,13 @@ header::before {
 }
 
 #bgAnim1 {
-  background: url("/img/slider1.png");
+  background: url("../img/slider1.png");
   background-size: auto 100vh;
   background-position: center;
 }
 
 #bgAnim2 {
-  background: url("/img/slider2.png");
+  background: url("../img/slider2.png");
   background-size: auto 100vh;
   background-position: center;
 }

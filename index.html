@@ -41,6 +41,7 @@
 	<style media="screen" type="text/css">/*<![CDATA[*/@import 'css/stylesheet2.css';/*]]>*/</style>
     <link rel="stylesheet" href="css/css_body_desktop.css" />
 
+
 </head>
 <body onscroll="changeM()" onload="changeM()">
 	<section id="loading">
@@ -71,51 +72,66 @@
 			<img id="img2" src="./img/splash.png"  style="display:none;height:60vh; max-height:731px; z-index:2; top:20vh; position: absolute;right:-1000px;" />
 			<img id="img3" src="./img/splash.png" style="display:none;height:60vh; max-height:731px; z-index:1; top:20vh; position: absolute;right:-1000px;" />
 		</div>
+
+		
 		<div class="nav-bar">
 			<div style="display:inline-block">
-				<img src="./img/loading/logo.png"  alt="logo hello dati" style="width:8vw; margin-right:5vw;" />
-				<nav class="navTop" style="border:0px solid rgba(255,255,255,0.3); border-width:0px 0px 0.5px 0px">
-					<span class="navItem">
-						<a href="#acceuil" role="menuitem" alt="Hello Dati" class="active" 
-						onclick="goTo('header')">Accueil</a>
+				<nav class="nav-bar navbar navbar-expand-lg navbar-light bg-primary" 
+				style="color: #f7f6f8;width: 100%;">
+					
+					<a class="navbar-brand" href="#" style="margin-right: 10px;" >
+						<img src="./img/loading/logo.png"  alt="logo hello dati" style="width:100px" />
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" 
+					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					style="margin-left: 130px;" 
+					 aria-expanded="false" aria-label="Toggle navigation">
+					  <span class="navbar-toggler-icon"></span>
+					</button>
+				  
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					  <ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+						  <a class="nav-link" href="#" onclick="goTo('header')" style="color: #fff;">Accueil <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" href="#" onclick="goTo('#presentation')" style="color: #fff;">Presentation</a>
+						</li>
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" style="color: #fff;" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Produits
+						  </a>
+						  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#" onclick="goTo('#produits')" >Appareil</a>
+							<a class="dropdown-item" href="#" onclick="goTo('#dashboard')" >Dashboard</a>
+						  </div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#" onclick="goTo('#apropos')" style="color: #fff;">Qui Sommes Nous <span class="sr-only">(current)</span></a>
+						</li>
 
-					</span>
-					<span class="navItem" onclick="goTo('#presentation')">
-						<a href="#presentation" role="menuitem" alt="Présentation de Hello Dati">Présentation</a>
-					</span>
-					<span class="spanel navItem">
-						<a href="#produits" alt="les produits de Hello Dati" onclick="goTo('#produits')">Produits <i class="fas fa-caret-down" style="font-size:0.6vw;"></i></a>
-						<nav style="background: rgba(0,0,0,0)" class="snavTop">
-							<span class="navItem" onclick="goTo('#produits')">
-								<a href="#produits" role="menuitem" alt="les produits de Hello Dati">Appareil</a>
-							</span>
-							<span class="navItem" onclick="goTo('#dashboard')">
-								<a href="#dashboard" role="menuitem" alt="panel admin de Hello Dati">Tableau de bord</a>
-							</span>
-						</nav>
-					</span>
-					<span class="navItem" onclick="goTo('#apropos')">
-						<a href="#apropos" role="menuitem" alt="à propos de Hello Dati">Qui sommes nous?</a>
-					</span>
-					<span class="navItem" onclick="goTo('#partenaires')">
-						<a href="#partenaires" role="menuitem" alt="les partenaires de Hello Dati">Partenaires</a>
-					</span>
-					<span class="spanel navItem">
-						<a href="#" alt="" class="active">Fr <i class="fas fa-caret-down" style="font-size:0.6vw;"></i></a>
-						<nav class="snavTop" style="left:0px;background:rgba(0,0,0,0)">
-							<span class="navItem itemb" onclick="window.location.href='en/index.html'" Title="English">
-								<a href="en/index.html" role="menuitem" alt="DiroosEnglish" Title="English">En</a>
-								<div class="item_anim">En</div>
-							</span>
-						</nav>
-					</span>
-
-				</nav>
-				<nav>
-					<span class="demo">
-						<a href="#contact" role="menuitem" alt="Contact Hello Dati">Contactez-nous</a>
-					</span>
-				</nav>
+						<li class="nav-item">
+							<a class="nav-link" href="#" onclick="goTo('#partenaires')" style="color: #fff;">Partenaires <span class="sr-only">(current)</span></a>
+						</li>
+                        <li>
+						<a class="nav-link dropdown-toggle" href="#" 
+						id="navbarDropdown1" role="button" data-toggle="dropdown"
+						  aria-haspopup="true" aria-expanded="false" style="color: #fff;">
+							FR
+						  </a>
+						  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">EN</a>
+						  </div>
+						</li>
+					  </ul>
+					  <form class="form-inline my-2 my-lg-0">
+						
+						<span class="demo">
+							<a href="#contact" role="menuitem" alt="Contact Hello Dati">Contactez-nous</a>
+						</span>
+					  </form>
+					</div>
+				  </nav>
 				<div class="content" id="headerContent1" style="display:none">
 					<div>
 						<div class="title">L'outil parfait <br />du voyageur</div>
@@ -126,6 +142,14 @@
 
 					</div>
 				</div>
+
+
+
+
+			
+
+
+
 				<div class="content" id="headerContent2" style="display:none">
 					<div>
 						<div class="title">Notre <br />smartphone</div>
@@ -183,61 +207,75 @@
 			</div>
 		</div>
 		</div>
-	</section>	<section id="produits" style="background-color:#ffffff;height:105vh;">
+	</section>	
+	
+
+	<section id="produits" class="container" style="height:1000px;width: auto;">
 	    <h1 style="color: #3c2ef1;">Appareil</h1>
-	    <div style="display:inline-block; width:60%;font-size:1vw; text-align:center;">
+	    <div class="row" style="display:inline-block; width:100%;font-size:1vw; text-align:center;">
+			<div class="col-md-12">
 	        Diroos vous propose un smartphone équipé d’un ensemble de services adapté à tous vos besoins dont des
 	        appels gratuits, une connexion internet gratuite, un guide complet de votre destination et des suggestions des
 	        meilleurs endroits de la ville recommandées par notre équipe qui vous parviennent sous forme de notifications
 	        et qui assurent la réussite de votre voyage.
+			</div>
 	    </div>
-	    <div style="display:inline-block; width:60%; margin: auto;">
-	        <div class="divcenter">
-	            <img class="imgj" src="./img/app.png" style="height:60vh; width:auto; margin-left: 80px">
-	            <div class="panel panel-left" id="panel1" style=";">
-	                <img src='./img/call.svg' class="svg-icon">
 
-	                <div class="title_panel" style="color:#3c2ef1;">Appels gratuits</div>
-	                <div class="description_panel" style="font-size: 15px;">
-	                    Forfait d'appels locaux
-	                </div>
-	            </div>
-	            <div class="panel panel-left" id="panel2" style=";">
+	    <div class="row" style="width:60%; margin: auto;">
+	        <div class="col-sm" style="margin: auto; align-items: center;">	
+	            <img class="imgj" src="./img/app.png" style="height:450px; width:auto; ">
+              
+				<div class="panel panel-left" id="panel1" style=";">
+					<img src='./img/call.svg' class="svg-icon">
+				
+					<div class="title_panel" style="color:#3c2ef1;">Appels gratuits</div>
+					<div class="description_panel" style="font-size: 15px;">
+						Forfait d'appels locaux
+					</div>
+				</div>
+				<div class="panel panel-left" id="panel2" style=";">
 					<img src='./img/internet.svg' class="svg-icon">
-	                <div class="title_panel" style="color:#3c2ef1;">Internet Gratuit</div>
-	                <div class="description_panel" style="font-size: 15px;">
-	                    Forfait 4G journaliers
-	                </div>
-	            </div>
-	            <div class="panel panel-left" id="panel3" style=";">
+					<div class="title_panel" style="color:#3c2ef1;">Internet Gratuit</div>
+					<div class="description_panel" style="font-size: 15px;">
+						Forfait 4G journaliers
+					</div>
+				</div>
+				<div class="panel panel-left" id="panel3" style=";">
 					<img src='./img/wifi.svg' class="svg-icon">
-	                <div class="title_panel" style="color:#3c2ef1;">HotSpot et Wifi</div>
-	                <div class="description_panel" style="font-size: 15px;">
-	                    Transformer Diroosen modem wifi
-	                </div>
-	            </div>
-	            <div class="panel panel-right" id="panel4" style=";">
+					<div class="title_panel" style="color:#3c2ef1;">HotSpot et Wifi</div>
+					<div class="description_panel" style="font-size: 15px;">
+						Transformer Diroosen modem wifi
+					</div>
+				</div>
+				<div class="panel panel-right" id="panel4" style=";">
 					<img src='./img/hotel.svg' class="svg-icon">
-	                <div class="title_panel" style="color:#3c2ef1;">Services hôteliers</div>
-	                <div class="description_panel" style="font-size: 15px;">
-	                    Visibilité sur tous les services de votre hôtel
-	                </div>
-	            </div>
-	            <div class="panel panel-right" id="panel5" style=";">
+					<div class="title_panel" style="color:#3c2ef1;">Services hôteliers</div>
+					<div class="description_panel" style="font-size: 15px;">
+						Visibilité sur tous les services de votre hôtel
+					</div>
+				</div>
+				<div class="panel panel-right" id="panel5" style=";">
 					<img src='./img/guide.svg' class="svg-icon">
-	                <div class="title_panel" style="color:#3c2ef1;">Guide complet</div>
-	                <div style="width:171px" class="description_panel" style="font-size: 15px;">
-	                    Présentation et itinéraire des activités culturelles ainsi que les lieux d'attraction
-	                </div>
-	            </div>
-	            <div class="panel panel-right" id="panel6" style="height: 50px;margin: 5px;">
+					<div class="title_panel" style="color:#3c2ef1;">Guide complet</div>
+					<div style="width:171px" class="description_panel" style="font-size: 15px;">
+						Présentation et itinéraire des activités culturelles ainsi que les lieux d'attraction
+					</div>
+				</div>
+				<div class="panel panel-right" id="panel6" style="height: 50px;margin: 5px;">
 					<img src='./img/settings.svg' class="svg-icon">
-	                <div class="title_panel" style="color:#3c2ef1;" >Boite à outils</div>
-	                <div class="description_panel" style="font-size: 15px;">
-	                    Application indispensable pour les voyageurs
-	                </div>
-	            </div>
-	        </div>
+					<div class="title_panel" style="color:#3c2ef1;" >Boite à outils</div>
+					<div class="description_panel" style="font-size: 15px;">
+						Application indispensable pour les voyageurs
+					</div>
+				</div>
+				</div>
+			
+			</div> 
+
+		<div class="col-sm">
+               
+		</div>
+			
 	    </div>
 	</section>
 	<section id="dashboard" style="margin-top: 10px;">
@@ -765,6 +803,10 @@
 	<script type="text/javascript" src="js/contact.js"></script>
 	<script type="text/javascript" src="js/style_body.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+
+	
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 	<script src="js/jquery.counterup.min.js"></script>

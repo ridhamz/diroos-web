@@ -433,11 +433,11 @@ h1::after {
 }
 
 #produits .imgj {
-  position: absolute;
+  /* position: absolute;*/
   top: 0px;
   left: 0px;
-  width: 25vw;
-  height: 65vh;
+  /* width: 25vw;
+  height: 65vh;*/
 }
 
 #produits .imgm {
@@ -1221,7 +1221,8 @@ iframe {
 }
 
 .nav-bar {
-  margin-top: -6vh;
+  margin-top: -5vh;
+  margin-right: 4vh;
 }
 
 #slideshow {
