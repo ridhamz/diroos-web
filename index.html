@@ -53,7 +53,65 @@
 			z-index:5;width:100px;margin-top:50px" src="https://hellodati.com/img/loading/loading.svg" alt="">
 	<img id="loading-bg1" style="z-index:5;position:absolute;bottom:0;width:100%" src="https://hellodati.com/img/loading/bg1.svg" alt="">
 	<img id="loading-bg2" style="position:absolute;bottom:0;width:100vw;height:100vh;right:0;object-fit:cover" src="https://hellodati.com/img/loading/bg2.svg" alt="">
-</section>	<header id="acceuil">
+</section>
+
+<nav class="nav-1 navbar navbar-expand-lg navbar-light bg-primary" 
+style="color: #f7f6f8;width: 100%;">
+	
+	<a class="navbar-brand" href="#" style="margin-right: 10px;" >
+		<img src="./img/loading/logo.png"  alt="logo hello dati" style="width:100px" />
+	</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" 
+	data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+	style="margin-left: 130px;" 
+	 aria-expanded="false" aria-label="Toggle navigation">
+	  <span class="navbar-toggler-icon"></span>
+	</button>
+  
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	  <ul class="navbar-nav mr-auto">
+		<li class="nav-item active">
+		  <a class="nav-link" href="#" onclick="goTo('header')" style="color: #fff;">Accueil <span class="sr-only">(current)</span></a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="#" onclick="goTo('#presentation')" style="color: #fff;">Presentation</a>
+		</li>
+		<li class="nav-item dropdown">
+		  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" style="color: #fff;" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Produits
+		  </a>
+		  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			<a class="dropdown-item" href="#" onclick="goTo('#produits')" >Appareil</a>
+			<a class="dropdown-item" href="#" onclick="goTo('#dashboard')" >Dashboard</a>
+		  </div>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#" onclick="goTo('#apropos')" style="color: #fff;">Qui Sommes Nous <span class="sr-only">(current)</span></a>
+		</li>
+
+		<li class="nav-item">
+			<a class="nav-link" href="#" onclick="goTo('#partenaires')" style="color: #fff;">Partenaires <span class="sr-only">(current)</span></a>
+		</li>
+		<li>
+		<a class="nav-link dropdown-toggle" href="#" 
+		id="navbarDropdown1" role="button" data-toggle="dropdown"
+		  aria-haspopup="true" aria-expanded="false" style="color: #fff;">
+			FR
+		  </a>
+		  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			<a class="dropdown-item" href="#">EN</a>
+		  </div>
+		</li>
+	  </ul>
+	  <form class="form-inline my-2 my-lg-0">
+		
+		<span class="demo">
+			<a href="#contact" role="menuitem" alt="Contact Hello Dati">Contactez-nous</a>
+		</span>
+	  </form>
+	</div>
+  </nav>
+	<header id="acceuil">
 		<div class="bgAnim" id="bgAnim1" style="display:none">
 			<div id="slideshow">
 				<img id="service1" src="./img/services/1.png" style="max-width:259px; " />
@@ -74,111 +132,12 @@
 		</div>
 
 		
-		<div class="nav-bar">
-			<div style="display:inline-block">
-				<nav class="nav-bar navbar navbar-expand-lg navbar-light bg-primary" 
-				style="color: #f7f6f8;width: 100%;">
-					
-					<a class="navbar-brand" href="#" style="margin-right: 10px;" >
-						<img src="./img/loading/logo.png"  alt="logo hello dati" style="width:100px" />
-					</a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" 
-					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-					style="margin-left: 130px;" 
-					 aria-expanded="false" aria-label="Toggle navigation">
-					  <span class="navbar-toggler-icon"></span>
-					</button>
-				  
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					  <ul class="navbar-nav mr-auto">
-						<li class="nav-item active">
-						  <a class="nav-link" href="#" onclick="goTo('header')" style="color: #fff;">Accueil <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-						  <a class="nav-link" href="#" onclick="goTo('#presentation')" style="color: #fff;">Presentation</a>
-						</li>
-						<li class="nav-item dropdown">
-						  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" style="color: #fff;" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Produits
-						  </a>
-						  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#" onclick="goTo('#produits')" >Appareil</a>
-							<a class="dropdown-item" href="#" onclick="goTo('#dashboard')" >Dashboard</a>
-						  </div>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#" onclick="goTo('#apropos')" style="color: #fff;">Qui Sommes Nous <span class="sr-only">(current)</span></a>
-						</li>
-
-						<li class="nav-item">
-							<a class="nav-link" href="#" onclick="goTo('#partenaires')" style="color: #fff;">Partenaires <span class="sr-only">(current)</span></a>
-						</li>
-                        <li>
-						<a class="nav-link dropdown-toggle" href="#" 
-						id="navbarDropdown1" role="button" data-toggle="dropdown"
-						  aria-haspopup="true" aria-expanded="false" style="color: #fff;">
-							FR
-						  </a>
-						  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">EN</a>
-						  </div>
-						</li>
-					  </ul>
-					  <form class="form-inline my-2 my-lg-0">
-						
-						<span class="demo">
-							<a href="#contact" role="menuitem" alt="Contact Hello Dati">Contactez-nous</a>
-						</span>
-					  </form>
-					</div>
-				  </nav>
-				<div class="content" id="headerContent1" style="display:none">
-					<div>
-						<div class="title">L'outil parfait <br />du voyageur</div>
-						<div class="description">
-							<br/>
-							Parce que votre satisfation est notre objectif. <br/>Nous mettons tous notre savoir faire entre vos mains.
-						</div><br />
-
-					</div>
-				</div>
-
-
-
-
+	
 			
 
 
 
-				<div class="content" id="headerContent2" style="display:none">
-					<div>
-						<div class="title">Notre <br />smartphone</div>
-						<div class="description">
-
-							<ul>
-								<li>Appels gratuits</li>
-							</ul>
-							<ul style="margin-left:20px;">
-								<li>Internet gratuit</li>
-							</ul>
-							
-
-
-							<ul style="margin-left:20px;">
-								<li>Services de l'hôtel</li>
-							</ul>
-							<ul>
-								<li>Guides et recommendations</li>
-							</ul>
-						</div>
-						<!-- <i class="descover" onclick="goTo('#produits')">
-	                        Découvrir <i class="fas fa-long-arrow-alt-right"></i>
-	                    </i> -->
-					</div>
-
-				</div>
-			</div>
-		</div>
+				
 	</header>	<section id="presentation" style="text-align:center; background-color:#f7f6f8">
 		<h1 style="margin-bottom:1vh; color: #3c2ef1;">présentation</h1>
 		<div class="divcenter" style="display:inline-block; width:50%; padding-right:0px; margin-bottom:4vh;">
