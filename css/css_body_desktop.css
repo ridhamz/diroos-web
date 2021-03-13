@@ -379,7 +379,7 @@ section > div {
   /*margin-top: 4vh;*/
 }
 
-#produits > div {
+#produitsss > div {
   display: inline-block;
   font-family: "Champagne & Limousines";
   margin-top: 4vh;
@@ -426,14 +426,14 @@ h1::after {
   border-width: 0px 0px 2px 0px;
 }
 
-#produits .divcenter {
+#produitsss .divcenter {
   position: relative;
   display: inline-block;
   width: 25vw;
   position: relative;
 }
 
-#produits .imgj {
+#produitsss .imgj {
   /* position: absolute;*/
   top: 0px;
   left: 0px;
@@ -441,7 +441,7 @@ h1::after {
   height: 65vh;*/
 }
 
-#produits .imgm {
+#produitsss .imgm {
   position: absolute;
   top: 4vh;
   left: 0px;
@@ -449,7 +449,7 @@ h1::after {
   transform: rotate(-25deg);
 }
 
-#produits .panel {
+#produitsss .panel {
   display: flex;
   width: 20vw;
   flex-direction: column;
@@ -474,7 +474,7 @@ h1::after {
   width: 7vw;
 }
 
-#produits .icon_div {
+#produitsss .icon_div {
   display: inline-block;
   font-size: 2vw;
   background-color: #213b5c;
@@ -486,7 +486,7 @@ h1::after {
   color: #fafafa;
 }
 
-#produits .icon_img {
+#produitss .icon_img {
   width: 60px;
   height: 60px;
 }
@@ -526,19 +526,19 @@ h1::after {
   color: white;
 }
 
-#produits #panel2 {
+#produitss #panel2 {
   top: 25vh;
 }
 
-#produits #panel3 {
+#produitss #panel3 {
   top: 50vh;
 }
 
-#produits #panel5 {
+#produitss #panel5 {
   top: 25vh;
 }
 
-#produits #panel6 {
+#produitss #panel6 {
   top: 50vh;
 }
 
