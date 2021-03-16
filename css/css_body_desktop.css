@@ -199,7 +199,7 @@ nav span > .item_anim {
   padding-top: 0px;
   -webkit-transition: all 0.8s ease;
   transition: all 0.8s ease;
-  color: #3c2ef1;
+  color: #21304b;
   opacity: 1;
   webkit-transform: translateY(-20px);
   transform: translateY(-20px);
@@ -542,7 +542,7 @@ h1::after {
   top: 50vh;
 }
 
-footer {
+footer1111 {
   width: 100%;
   margin: 0px;
   height: 500px;
@@ -555,7 +555,7 @@ footer {
   background-attachment: scroll;
 }
 
-footer > div {
+footer111 > div {
   display: inline-block;
   font-family: "Champagne & Limousines";
   text-align: left;
@@ -563,11 +563,11 @@ footer > div {
   margin-top: 10vh;
 }
 
-.copyr {
+.copyrsss {
   font-family: "Champagne &amp; Limousines Thick Bold";
 }
 
-footer .panel {
+footer111 .panel {
   display: inline-block;
   margin-right: 6vw;
   color: #213b5c;
@@ -575,7 +575,7 @@ footer .panel {
   line-height: 3.5vh;
 }
 
-footer .panel > .title {
+footer1111 .panel > .title {
   display: inline-block;
   font-family: "Champagne &amp; Limousines Thick Bold";
   margin-bottom: 4vh;
@@ -585,11 +585,11 @@ footer .panel > .title {
   padding-right: 3px;
 }
 
-footer .item {
+footer1111 .item {
   cursor: pointer;
 }
 
-footer .item:hover {
+footer11 .item:hover {
   color: #fde100;
   cursor: pointer;
   background-color: #213b5c;
@@ -1063,7 +1063,7 @@ iframe {
   cursor: pointer;
 }
 
-#contact {
+#contact1111 {
   display: none;
   background-color: rgba(0, 0, 0, 0.9);
   position: fixed;
@@ -1073,20 +1073,20 @@ iframe {
   z-index: 999999;
 }
 
-#contact .divcenter {
+#contact111 .divcenter {
   display: flex;
   flex-direction: column;
 }
 
-#contact .divcenter > div {
+#contact111 .divcenter > div {
   display: flex;
   align-items: stretch;
   justify-items: stretch;
 }
-/* #contact .divcenter div:nth-child(2){
+/* #contact111 .divcenter div:nth-child(2){
     width:60%;
 }
-#contact .divcenter div:nth-child(1){
+#contact111 .divcenter div:nth-child(1){
     width:40%;
 } */
 
